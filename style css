@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  font-family: "Quicksand", sans-serif;
+}
+
+.todo-card {
+  width: 260px;
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #ffd6e8;
+  box-shadow: 0 0 25px rgba(255, 182, 213, 0.6);
+  padding: 14px;
+}
+
+/* 헤더 */
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #ff8fb1;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  border: 1px solid #ffd6e8;
+  background: #fff0f6;
+  color: #ff8fb1;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 리스트 */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  background: #fff0f6;
+  font-size: 13px;
+}
+
+.todo-list li.done {
+  opacity: 0.6;
+}
+
+/* 체크박스 */
+.todo-list input {
+  accent-color: #ff8fb1;
+}
+
+/* 텍스트 */
+.text {
+  flex: 1;
+  color: #ff6f9f;
+}
+
+/* 하트 */
+.heart {
+  background: none;
+  border: none;
+  color: #ff6f9f;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 하단 */
+.footer {
+  text-align: center;
+  font-size: 10px;
+  color: #ffc1d9;
+  margin-top: 8px;
+}
